@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SVG Icons Plugin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            text-align: center;
+        }
+        .svg-icon {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Todos los iconos disponibles y como se debeb llamar, se pueden agregar más y llamarlos por el nombre del archivo que debe ser url friendly -->
+    <span data-icon="activity"></span>
+    <span data-icon="alert"></span>
+    <span data-icon="archive"></span>
+    <span data-icon="arrow-bottom"></span>
+    <span data-icon="arrow-left"></span>
+    <span data-icon="arrow-right"></span>
+    <span data-icon="arrow-top"></span>
+    <span data-icon="backwards"></span>
+    <span data-icon="ban"></span>
+    <span data-icon="bell"></span>
+    <span data-icon="book"></span>
+    <span data-icon="bookmark"></span>
+    <span data-icon="calendar"></span>
+    <span data-icon="caret-bottom"></span>
+    <span data-icon="caret-left"></span>
+    <span data-icon="caret-right"></span>
+    <span data-icon="caret-top"></span>
+    <span data-icon="cart"></span>
+    <span data-icon="checkmark"></span>
+    <span data-icon="chevron-bottom"></span>
+    <span data-icon="chevron-left"></span>
+    <span data-icon="chevron-right"></span>
+    <span data-icon="chevron-top"></span>
+    <span data-icon="clock"></span>
+    <span data-icon="close"></span>
+    <span data-icon="code"></span>
+    <span data-icon="compose"></span>
+    <span data-icon="creditcard"></span>
+    <span data-icon="download"></span>
+    <span data-icon="edit"></span>
+    <span data-icon="eject"></span>
+    <span data-icon="ellipsis-horizontal"></span>
+    <span data-icon="ellipsis-vertical"></span>
+    <span data-icon="end"></span>
+    <span data-icon="export"></span>
+    <span data-icon="external"></span>
+    <span data-icon="eye"></span>
+    <span data-icon="file"></span>
+    <span data-icon="fire"></span>
+    <span data-icon="flag"></span>
+    <span data-icon="folder-open"></span>
+    <span data-icon="folder"></span>
+    <span data-icon="forwards"></span>
+    <span data-icon="gift"></span>
+    <span data-icon="heart"></span>
+    <span data-icon="home"></span>
+    <span data-icon="import"></span>
+    <span data-icon="inbox"></span>
+    <span data-icon="info"></span>
+    <span data-icon="lightning"></span>
+    <span data-icon="link"></span>
+    <span data-icon="location"></span>
+    <span data-icon="lock"></span>
+    <span data-icon="mail"></span>
+    <span data-icon="menu"></span>
+    <span data-icon="message"></span>
+    <span data-icon="minus"></span>
+    <span data-icon="music"></span>
+    <span data-icon="mute"></span>
+    <span data-icon="options"></span>
+    <span data-icon="paperclip"></span>
+    <span data-icon="pause"></span>
+    <span data-icon="photo"></span>
+    <span data-icon="play"></span>
+    <span data-icon="plus"></span>
+    <span data-icon="portfolio"></span>
+    <span data-icon="print"></span>
+    <span data-icon="reload"></span>
+    <span data-icon="reply"></span>
+    <span data-icon="search"></span>
+    <span data-icon="send"></span>
+    <span data-icon="settings"></span>
+    <span data-icon="star"></span>
+    <span data-icon="start"></span>
+    <span data-icon="tag"></span>
+    <span data-icon="trash"></span>
+    <span data-icon="unlock"></span>
+    <span data-icon="user"></span>
+    <span data-icon="video"></span>
+    <span data-icon="volume"></span>
+    <span data-icon="work"></span>
+
+    <!-- Se carga este archivo -->
+    <script src="svg-icons.js"></script>
+
+    <!-- y se inicia -->
+    <script>
+        /**
+         * La ruta por defect del folder con los iconos: 'icons/'
+         * Si se desea cambiar, se debe pasar la ruta al momento de instanciar la clase:
+         * var svgIcons = new SVGIcons('my/icons/path'); 
+         **/
+        var svgIcons = new SVGIcons();
+        svgIcons.load();
+    </script>
+</body>
+
+</html>
