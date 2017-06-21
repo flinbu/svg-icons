@@ -1,0 +1,32 @@
+{
+  "name": "svg-icons",
+  "version": "1.0.0",
+  "description": "jQuery plugin to load SVG",
+  "main": "svg-icons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flinbu/svg-icons.git"
+  },
+  "keywords": [
+    "svg",
+    "icons",
+    "jquery",
+    "plugins",
+    "frontend",
+    "ui",
+    "ux"
+  ],
+  "author": "Felipe Linares @flinbu",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "bytesize-icons": "git+https://github.com/danklammer/bytesize-icons.git"
+  }
+}
