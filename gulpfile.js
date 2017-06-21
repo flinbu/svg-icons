@@ -6,7 +6,7 @@ gulp.task('min', function() {
     gulp.src('svg-icons.js')
         .pipe(rename('svg-icons.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('/'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('icons', function() {
