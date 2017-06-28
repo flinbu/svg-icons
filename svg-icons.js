@@ -27,7 +27,7 @@ SVGIcons.prototype.load = function() {
                 ajax.onload = function() {
                     el.innerHTML = ajax.responseText;
                 };
-                el.className = 'svg-icon ' + icon + '-icon' + ((el.className.length > 0) ? ' ' + el.className : '');
+                el.className = 'svg-icon ' + icon + '-icon' + ((el.className.length > 0) ? ' ' + el.className : ''); 
                 el.removeAttribute('data-icon');
             } else {
                 el.setAttribute('data-icon-error', 'SVG is not supported');
