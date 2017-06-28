@@ -13,7 +13,7 @@ var svgIcon = new SVGIcons();
 svgIcons.load();
 ```
 
-By default, the icons path is set to the root directory (./icons), but you can set you own path
+By default, the icons path is set to the root directory (./icons), but you can set you own path. You can recall the method when new elements are added to DOOM.
 ```
 var svgIcons = new SVGIcons('path/to/icons');
 svgIcons.load();
