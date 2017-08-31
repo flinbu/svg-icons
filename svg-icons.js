@@ -13,9 +13,11 @@ function SVGIcons(iconsPath) {
     this.path = iconsPath;
 };
 
-SVGIcons.prototype.load = function() {
+SVGIcons.prototype.load = function(callback) {
     var iconsContainer = document.querySelectorAll('[data-icon]'),
-        iconsPath = this.iconsPath;
+        iconsPath = this.iconsPath,
+        totalIcons = iconsContainer.length,
+        i = 0;
     iconsContainer.forEach(function(el) {
         var loaded = (' ' + el.className + ' ').indexOf(' svg-icon ') > -1;
         if (!loaded) {
@@ -33,5 +35,11 @@ SVGIcons.prototype.load = function() {
                 el.setAttribute('data-icon-error', 'SVG is not supported');
             }
         }
+        if (i === totalIcons - 1) {
+            if (callback) {
+                callback();
+            }
+        }
+        i++;
     });
 };
