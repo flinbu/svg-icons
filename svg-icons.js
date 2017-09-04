@@ -14,7 +14,7 @@ function SVGIcons(iconsPath) {
 };
 
 SVGIcons.prototype.load = function(callback) {
-    var iconsContainer = document.querySelectorAll('[data-icon]'),
+    var iconsContainer = Array.from(document.querySelectorAll('[data-icon]')),
         iconsPath = this.iconsPath,
         totalIcons = iconsContainer.length,
         i = 0;
