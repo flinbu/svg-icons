@@ -1,5 +1,5 @@
 {
-  "name": "svg-icons",
+  "name": "flinbu-svg-icons",
   "version": "1.0.0",
   "description": "jQuery plugin to load SVG",
   "main": "svg-icons.js",
